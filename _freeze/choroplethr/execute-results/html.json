@@ -1,0 +1,17 @@
+{
+  "hash": "59b4a21542fcb6502e19a7ec8079ba42",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Choroplethr\"\n---\n\n\n\n\n\n`choroplethr` was designed to make it as easy as possible to do exploratory data analysis of demographic data using choropleth (i.e. color-coded) maps.\n\nAs an example, let's use `choroplethr` to explore the built-in dataset `?df_pop_county`, which has 2012 county-level population estimates. We will create the map using `?county_choropleth`.\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(choroplethr)\nlibrary(choroplethrMaps)\n\ndata(df_pop_county)\ncounty_choropleth(df_pop_county)\n```\n\n::: {.cell-output-display}\n![](choroplethr_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n`choroplethr` defaults to using 7 quantiles. This means that there are 7 unique colors, and an equal number of counties are assigned to each color.\n\nIf you use two quantiles, you can see which counties have above or blow the median population:\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(choroplethr)\nlibrary(choroplethrMaps)\n\ndata(df_pop_county)\ncounty_choropleth(df_pop_county, num_colors=2)\n```\n\n::: {.cell-output-display}\n![](choroplethr_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n\n\n\nUsing a continuous scale for the colors makes it easy to detect outliers. You can do that by setting `num_colors=1`:\n\n\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(choroplethr)\nlibrary(choroplethrMaps)\n\ndata(df_pop_county)\ncounty_choropleth(df_pop_county, num_colors=1)\n```\n\n::: {.cell-output-display}\n![](choroplethr_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n\n\n\nTo learn more take the free class [Mapmaking in R with Choroplethr](https://ari-lamsteins-courses.thinkific.com/courses/mapmaking-in-r-with-choroplethr)\n",
+    "supporting": [
+      "choroplethr_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

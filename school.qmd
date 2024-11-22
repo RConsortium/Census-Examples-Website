@@ -5,14 +5,6 @@ title: "CPS School Enrollment Supplement"
 Here is how you can access the CPS School Enrollment Supplement in R:
 
 ```{r}
-library(censusapi)
-
-# Define the variables you want to retrieve
-variables <- c("SCHENROLL", "AGE", "SEX", "RACE")
-
-# Query the CPS School Enrollment Supplement data
-
-# View the first few rows of the data
 
 
 ```

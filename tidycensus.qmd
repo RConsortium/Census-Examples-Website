@@ -2,8 +2,8 @@
 title: "tidycensus Examples"
 ---
 
-Here's an example of getting State Population Estimates from the 2020 Decennial 
-Census using the `tidycensus` package: 
+Here's an example of getting State Population Estimates from the 2020 Decennial Census using the `tidycensus` package:
+
 ```{r}
 #| message: false
 library(dplyr)
@@ -20,6 +20,7 @@ pop2020
 ```
 
 Here is how you can see the states with the largest population:
+
 ```{r}
 arrange(pop2020, desc(value))
 ```
