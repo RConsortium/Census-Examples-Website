@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://RConsortium.github.io/Census-Examples-Website/tidycensus.html</loc>
-    <lastmod>2024-11-22T20:00:11.731Z</lastmod>
+    <loc>https://RConsortium.github.io/Census-Examples-Website/school.html</loc>
+    <lastmod>2024-11-22T22:17:04.399Z</lastmod>
   </url>
   <url>
-    <loc>https://RConsortium.github.io/Census-Examples-Website/index.html</loc>
-    <lastmod>2024-11-22T20:00:40.589Z</lastmod>
+    <loc>https://RConsortium.github.io/Census-Examples-Website/tidycensus.html</loc>
+    <lastmod>2024-11-22T22:17:04.399Z</lastmod>
   </url>
   <url>
     <loc>https://RConsortium.github.io/Census-Examples-Website/choroplethr.html</loc>
-    <lastmod>2024-11-22T20:00:11.730Z</lastmod>
-  </url>
-  <url>
-    <loc>https://RConsortium.github.io/Census-Examples-Website/school.html</loc>
-    <lastmod>2024-11-22T20:00:11.730Z</lastmod>
+    <lastmod>2024-11-22T22:17:04.399Z</lastmod>
   </url>
   <url>
     <loc>https://RConsortium.github.io/Census-Examples-Website/about.html</loc>
-    <lastmod>2024-11-22T20:00:11.729Z</lastmod>
+    <lastmod>2024-11-22T22:17:04.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://RConsortium.github.io/Census-Examples-Website/index.html</loc>
+    <lastmod>2024-11-22T22:17:04.399Z</lastmod>
   </url>
 </urlset>
