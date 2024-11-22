@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "tidycensus.html",
+    "href": "tidycensus.html",
+    "title": "tidycensus Examples",
+    "section": "",
+    "text": "Here’s an example of getting State Population Estimates from the 2020 Decennial Census using the tidycensus package:\n\nlibrary(dplyr)\nlibrary(tidycensus)\n\npop2020 &lt;- get_decennial(\n  geography = \"state\",\n  variables = \"P1_001N\",\n  year = 2020) %&gt;%\n  mutate(year = 2020, variable = \"population\")\n\npop2020\n\n# A tibble: 52 × 5\n   GEOID NAME                 variable      value  year\n   &lt;chr&gt; &lt;chr&gt;                &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;\n 1 42    Pennsylvania         population 13002700  2020\n 2 06    California           population 39538223  2020\n 3 54    West Virginia        population  1793716  2020\n 4 49    Utah                 population  3271616  2020\n 5 36    New York             population 20201249  2020\n 6 11    District of Columbia population   689545  2020\n 7 02    Alaska               population   733391  2020\n 8 12    Florida              population 21538187  2020\n 9 45    South Carolina       population  5118425  2020\n10 38    North Dakota         population   779094  2020\n# ℹ 42 more rows\n\n\nHere is how you can see the states with the largest population:\n\narrange(pop2020, desc(value))\n\n# A tibble: 52 × 5\n   GEOID NAME           variable      value  year\n   &lt;chr&gt; &lt;chr&gt;          &lt;chr&gt;         &lt;dbl&gt; &lt;dbl&gt;\n 1 06    California     population 39538223  2020\n 2 48    Texas          population 29145505  2020\n 3 12    Florida        population 21538187  2020\n 4 36    New York       population 20201249  2020\n 5 42    Pennsylvania   population 13002700  2020\n 6 17    Illinois       population 12812508  2020\n 7 39    Ohio           population 11799448  2020\n 8 13    Georgia        population 10711908  2020\n 9 37    North Carolina population 10439388  2020\n10 26    Michigan       population 10077331  2020\n# ℹ 42 more rows"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "R Census Examples",
+    "section": "",
+    "text": "This site contains examples of how to use various R packages that work with US Census Data.\nIt’s built using Quarto. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "choroplethr.html",
+    "href": "choroplethr.html",
+    "title": "Choroplethr",
+    "section": "",
+    "text": "choroplethr was designed to make it as easy as possible to do exploratory data analysis of demographic data using choropleth (i.e. color-coded) maps.\nAs an example, let’s use choroplethr to explore the built-in dataset ?df_pop_county, which has 2012 county-level population estimates. We will create the map using ?county_choropleth.\n\nlibrary(choroplethr)\nlibrary(choroplethrMaps)\n\ndata(df_pop_county)\ncounty_choropleth(df_pop_county)\n\n\n\n\n\n\n\n\nchoroplethr defaults to using 7 quantiles. This means that there are 7 unique colors, and an equal number of counties are assigned to each color.\nIf you use two quantiles, you can see which counties have above or blow the median population:\n\nlibrary(choroplethr)\nlibrary(choroplethrMaps)\n\ndata(df_pop_county)\ncounty_choropleth(df_pop_county, num_colors=2)\n\n\n\n\n\n\n\n\nUsing a continuous scale for the colors makes it easy to detect outliers. You can do that by setting num_colors=1:\n\nlibrary(choroplethr)\nlibrary(choroplethrMaps)\n\ndata(df_pop_county)\ncounty_choropleth(df_pop_county, num_colors=1)\n\n\n\n\n\n\n\n\nTo learn more take the free class Mapmaking in R with Choroplethr"
+  },
+  {
+    "objectID": "school.html",
+    "href": "school.html",
+    "title": "CPS School Enrollment Supplement",
+    "section": "",
+    "text": "Here is how you can access the CPS School Enrollment Supplement in R:"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site is intended as a companion to A Guide to Working with Census Data in R.\nIt was created by the R Consortium Census Working Group (do we have a link?)."
+  }
+]
