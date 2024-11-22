@@ -1,0 +1,19 @@
+---
+title: "tidycensus Examples"
+---
+
+Here's an example of getting State Population Estimates from the 2020 Decennial 
+Census using the `tidycensus` package: 
+```{r}
+#| message: false
+library(dplyr)
+library(tidycensus)
+
+pop2020 <- get_decennial(
+  geography = "state",
+  variables = "P1_001N",
+  year = 2020) %>%
+  mutate(year = 2020, variable = "population")
+
+pop2020
+```

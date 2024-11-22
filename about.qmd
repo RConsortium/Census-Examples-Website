@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+This site is intended as a companion to [A Guide to Working with Census Data in R](https://rconsortium.github.io/censusguide/).
+
+It was created by the R Consortium Census Working Group (do we have a link?).
