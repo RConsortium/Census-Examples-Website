@@ -11,6 +11,8 @@ website:
         text: tidycensus
       - href: choroplethr.qmd
         text: choroplethr
+      - href: school.qmd
+        text: CPS Supplement Whatever
       - about.qmd
       
 

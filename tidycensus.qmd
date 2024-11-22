@@ -16,4 +16,10 @@ pop2020 <- get_decennial(
   mutate(year = 2020, variable = "population")
 
 pop2020
+
+```
+
+Here is how you can see the states with the largest population:
+```{r}
+arrange(pop2020, desc(value))
 ```
