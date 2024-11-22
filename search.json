@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "R Census Examples",
     "section": "",
-    "text": "This site contains examples of how to use various R packages that work with US Census Data.\nIt’s built using Quarto. To learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This site contains examples of how to use various R packages that work with US Census Data.\nIt’s built using Quarto. To learn more about Quarto websites visit https://quarto.org/docs/websites.\nTest of publishing to github pages via github actions: https://quarto.org/docs/publishing/github-pages.html"
   },
   {
     "objectID": "choroplethr.html",
